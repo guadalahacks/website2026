@@ -450,7 +450,9 @@ export default function App() {
   const [shoreProgress, setShoreProgress] = useState(0); // 0..1
   const [deityProgress, setDeityProgress] = useState(0); // 0..1
 
-  const HEADER_H = 84.76;
+  const getHeaderHeight = () =>
+    document.querySelector(".sticky-header")?.getBoundingClientRect().height ??
+    84.76;
   const scrollToEl = (el, offset = 0) => {
     if (!el) return;
     const y = el.getBoundingClientRect().top + window.scrollY + offset;
@@ -463,7 +465,7 @@ export default function App() {
     const y = rect.bottom + window.scrollY - window.innerHeight;
     window.scrollTo({ top: y, behavior: "smooth" });
   };
-  const goPage2 = () => scrollToEl(page2Ref.current, -HEADER_H);
+  const goPage2 = () => scrollToEl(page2Ref.current, -getHeaderHeight());
   // Scroll to right before the rocky shore begins to rise on page 3
   const goRockyShoreStart = () => {
     const el = page3Ref.current;
@@ -472,7 +474,7 @@ export default function App() {
     const y = el.getBoundingClientRect().bottom + window.scrollY - vh * 1.9;
     window.scrollTo({ top: y, behavior: "smooth" });
   };
-  const goPage4 = () => scrollToEl(page4Ref.current, -HEADER_H);
+  const goPage4 = () => scrollToEl(page4Ref.current, -getHeaderHeight());
 
   useEffect(() => {
     const onScroll = () => {
