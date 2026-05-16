@@ -184,6 +184,7 @@ function Countdown() {
   const seconds = Math.floor((diff / 1000) % 60);
 
   const cells = [
+    { label: "Días", value: days },
     { label: "Horas", value: hours },
     { label: "Min", value: minutes },
     { label: "Seg", value: seconds },
