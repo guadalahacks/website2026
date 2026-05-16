@@ -194,6 +194,7 @@ function Countdown() {
     <div className="countdown-wrap">
       <p className="countdown-eyebrow">Guadalahacks 2026</p>
       <h2 className="countdown-title">16 &amp; 17 de mayo</h2>
+      <p className="countdown-subtitle">Las entregas cierran en:</p>
       <div className="countdown-grid">
         {cells.map((c) => (
           <div className="countdown-cell" key={c.label}>
