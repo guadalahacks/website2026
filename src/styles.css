@@ -872,7 +872,7 @@ a.logo-card:hover {
   font-family: inherit;
 }
 
-/* Responsive */
+/* Responsive — tablet */
 @media (max-width: 800px) {
   .contact-section {
     grid-template-columns: 1fr;
@@ -895,5 +895,190 @@ a.logo-card:hover {
   }
   .page-2b {
     padding: 48px 20px;
+  }
+
+  /* Header */
+  .header-content {
+    padding: 0 20px 9px;
+  }
+  .title {
+    width: 200px;
+    height: 40px;
+  }
+  .logo {
+    width: 40px;
+    height: 48px;
+  }
+  .btn {
+    padding: 6px 14px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  /* Page 2 mural */
+  .page-2 .mural {
+    left: 10%;
+    width: 80%;
+  }
+
+  /* Sponsors */
+  .logo-section.sponsors .logo-card {
+    min-width: 200px;
+    min-height: 160px;
+    padding: 24px 28px;
+  }
+  .logo-section.sponsors .logo-card img[alt="GitHub"] {
+    height: 80px;
+    transform: scale(1.2);
+  }
+  .logo-section.sponsors .logo-card img[alt="Cursor"] {
+    height: 80px;
+  }
+}
+
+/* Responsive — mobile */
+@media (max-width: 520px) {
+  /* Prevent horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Header: stack logo left, hide title on very small, compact nav */
+  .sticky-header {
+    height: auto;
+    min-height: 60px;
+  }
+  .header-content {
+    flex-wrap: wrap;
+    padding: 8px 12px;
+    gap: 6px;
+  }
+  .title {
+    width: 140px;
+    height: 30px;
+  }
+  .logo {
+    width: 32px;
+    height: 38px;
+  }
+  .nav-buttons {
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    padding: 5px 10px;
+    font-size: 9px;
+    letter-spacing: 0.8px;
+  }
+
+  /* Countdown */
+  .countdown-wrap {
+    padding: 16px 12px 20px;
+  }
+  .countdown-title {
+    font-size: 16px;
+  }
+  .countdown-value {
+    font-size: 22px;
+  }
+  .countdown-grid {
+    gap: 6px;
+  }
+  .countdown-cell {
+    padding: 8px 0 6px;
+    border-radius: 8px;
+  }
+  .register-btn {
+    padding: 10px 24px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  /* Page 2 — mural full width */
+  .page-2 .mural {
+    left: 4%;
+    width: 92%;
+    padding: 14px;
+    border-width: 4px;
+  }
+  .collage-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  /* Contact */
+  .contact-title {
+    font-size: 26px;
+  }
+  .contact-subtitle {
+    font-size: 18px;
+  }
+  .contact-map {
+    height: 240px;
+  }
+  .map-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .map-btn {
+    justify-content: center;
+  }
+
+  /* Page 4 */
+  .page-4 {
+    padding: 48px 16px 32px;
+    gap: 40px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+
+  /* Sponsors */
+  .logo-section.sponsors .logo-grid {
+    gap: 20px;
+  }
+  .logo-section.sponsors .logo-card {
+    min-width: 140px;
+    min-height: 120px;
+    padding: 20px 16px;
+  }
+  .logo-section.sponsors .logo-card img[alt="GitHub"] {
+    height: 60px;
+    max-width: 140px;
+    transform: scale(1.1);
+  }
+  .logo-section.sponsors .logo-card img[alt="Cursor"] {
+    height: 60px;
+    max-width: 120px;
+  }
+  .logo-section.sponsors .logo-name {
+    font-size: 12px;
+  }
+
+  /* Partners */
+  .logo-section.partners .logo-card img {
+    max-height: 60px;
+    max-width: 150px;
+  }
+
+  /* FAQ */
+  .faq-question {
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+  .faq-answer {
+    font-size: 13px;
+    padding: 0 16px;
+  }
+  .faq-item.open .faq-answer {
+    padding: 0 16px 16px;
+  }
+
+  /* Connect */
+  .connect-list a {
+    font-size: 14px;
+    padding: 12px 16px;
   }
 }
