@@ -51,8 +51,8 @@ const GMAPS_URL =
 const APPLE_MAPS_URL =
   "https://maps.apple.com/?daddr=Tecnol%C3%B3gico+de+Monterrey+Campus+Guadalajara";
 
-// ----- Countdown target: May 16, 2026 10:31 AM (UTC-6, GDL local time) -----
-const EVENT_TARGET = new Date("2026-05-16T10:31:00-06:00").getTime();
+// ----- Countdown target: May 17, 2026 10:31 AM (UTC-6, GDL local time) -----
+const EVENT_TARGET = new Date("2026-05-17T10:31:00-06:00").getTime();
 
 // ----- FAQ data -----
 const FAQS = [
