@@ -638,6 +638,21 @@ body {
   transform: translateY(-1px);
 }
 
+.past-projects-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+.register-btn-secondary {
+  font-size: 12px;
+  padding: 10px 24px;
+  opacity: 0.85;
+}
+.register-btn-secondary:hover {
+  opacity: 1;
+}
+
 /* -------- Page 4 -------- */
 .page-4 {
   background: #3B3540;
