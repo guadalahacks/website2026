@@ -191,10 +191,10 @@ function ContactSection() {
 //   ];
 //
 //   return (
-//     <div className="countdown-wrap">
-//       <p className="countdown-eyebrow">Guadalahacks 2026</p>
-//       <h2 className="countdown-title">16 &amp; 17 de mayo</h2>
-//       <p className="countdown-subtitle">Las entregas cierran en:</p>
+//     <div className="hero-wrap">
+//       <p className="hero-eyebrow">Guadalahacks 2026</p>
+//       <h2 className="hero-title">16 &amp; 17 de mayo</h2>
+//       <p className="hero-subtitle">Las entregas cierran en:</p>
 //       <div className="countdown-grid">
 //         {cells.map((c) => (
 //           <div className="countdown-cell" key={c.label}>
@@ -219,10 +219,10 @@ function ContactSection() {
 
 function PostEventCTA() {
   return (
-    <div className="countdown-wrap">
-      <p className="countdown-eyebrow">Guadalahacks 2026</p>
-      <h2 className="countdown-title">16 &amp; 17 de mayo</h2>
-      <p className="countdown-subtitle">¡Nos vemos pronto!</p>
+    <div className="hero-wrap">
+      <p className="hero-eyebrow">Guadalahacks 2026</p>
+      <h2 className="hero-title">16 &amp; 17 de mayo</h2>
+      <p className="hero-subtitle">¡Nos vemos pronto!</p>
       <a
         className="register-btn"
         href="https://guadalahacks2026.devpost.com/project-gallery"
