@@ -171,48 +171,84 @@ function ContactSection() {
   );
 }
 
-function Countdown() {
-  const [now, setNow] = useState(() => Date.now());
-  useEffect(() => {
-    const id = setInterval(() => setNow(Date.now()), 1000);
-    return () => clearInterval(id);
-  }, []);
-  const diff = Math.max(0, EVENT_TARGET - now);
-  const days = Math.floor(diff / 86400000);
-  const hours = Math.floor((diff / 3600000) % 24);
-  const minutes = Math.floor((diff / 60000) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
+// function Countdown() {
+//   const [now, setNow] = useState(() => Date.now());
+//   useEffect(() => {
+//     const id = setInterval(() => setNow(Date.now()), 1000);
+//     return () => clearInterval(id);
+//   }, []);
+//   const diff = Math.max(0, EVENT_TARGET - now);
+//   const days = Math.floor(diff / 86400000);
+//   const hours = Math.floor((diff / 3600000) % 24);
+//   const minutes = Math.floor((diff / 60000) % 60);
+//   const seconds = Math.floor((diff / 1000) % 60);
+//
+//   const cells = [
+//     { label: "Días", value: days },
+//     { label: "Horas", value: hours },
+//     { label: "Min", value: minutes },
+//     { label: "Seg", value: seconds },
+//   ];
+//
+//   return (
+//     <div className="hero-wrap">
+//       <p className="hero-eyebrow">Guadalahacks 2026</p>
+//       <h2 className="hero-title">16 &amp; 17 de mayo</h2>
+//       <p className="hero-subtitle">Las entregas cierran en:</p>
+//       <div className="countdown-grid">
+//         {cells.map((c) => (
+//           <div className="countdown-cell" key={c.label}>
+//             <div className="countdown-value">
+//               {String(c.value).padStart(2, "0")}
+//             </div>
+//             <div className="countdown-label">{c.label}</div>
+//           </div>
+//         ))}
+//       </div>
+//       <a
+//         className="register-btn"
+//         href="https://guadalahacks2026.devpost.com/"
+//         target="_blank"
+//         rel="noreferrer"
+//       >
+//         DevPost
+//       </a>
+//     </div>
+//   );
+// }
 
-  const cells = [
-    { label: "Días", value: days },
-    { label: "Horas", value: hours },
-    { label: "Min", value: minutes },
-    { label: "Seg", value: seconds },
-  ];
-
+function PostEventCTA() {
   return (
-    <div className="countdown-wrap">
-      <p className="countdown-eyebrow">Guadalahacks 2026</p>
-      <h2 className="countdown-title">16 &amp; 17 de mayo</h2>
-      <p className="countdown-subtitle">Las entregas cierran en:</p>
-      <div className="countdown-grid">
-        {cells.map((c) => (
-          <div className="countdown-cell" key={c.label}>
-            <div className="countdown-value">
-              {String(c.value).padStart(2, "0")}
-            </div>
-            <div className="countdown-label">{c.label}</div>
-          </div>
-        ))}
-      </div>
+    <div className="hero-wrap">
+      <p className="hero-eyebrow">Guadalahacks 2026</p>
+      <h2 className="hero-title">16 &amp; 17 de mayo</h2>
+      <p className="hero-subtitle">¡Nos vemos pronto!</p>
       <a
         className="register-btn"
-        href="https://guadalahacks2026.devpost.com/"
+        href="https://guadalahacks2026.devpost.com/project-gallery"
         target="_blank"
         rel="noreferrer"
       >
-        DevPost
+        Proyectos 2026
       </a>
+      <div className="past-projects-row">
+        <a
+          className="register-btn register-btn-secondary"
+          href="https://guadalahacks-2025.devpost.com/project-gallery"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Proyectos 2025
+        </a>
+        <a
+          className="register-btn register-btn-secondary"
+          href="https://guadalahacks.devpost.com/project-gallery"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Proyectos 2024
+        </a>
+      </div>
     </div>
   );
 }
@@ -547,9 +583,9 @@ export default function App() {
             </Layer>
           ))}
         </div>
-        {/* Countdown + register CTA at the top of Home (scrolls away, not sticky) */}
+        {/* Post-event CTA (scrolls away, not sticky) */}
         <div className="home-cta">
-          <Countdown />
+          <PostEventCTA />
         </div>
       </div>
 

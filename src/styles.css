@@ -546,7 +546,7 @@ body {
   pointer-events: auto;
 }
 
-.countdown-wrap {
+.hero-wrap {
   background: transparent;
   border: 0;
   padding: 28px 40px 32px;
@@ -559,23 +559,24 @@ body {
   max-width: 1100px;
   width: min(92%, 1100px);
 }
-.countdown-eyebrow {
-  font-size: 10px;
+.hero-eyebrow {
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #c9a24a;
-  margin-bottom: 4px;
-}
-.countdown-title {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
   margin-bottom: 6px;
 }
-.countdown-subtitle {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.55);
-  margin-bottom: 19px;
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+.hero-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 22px;
 }
 .countdown-grid {
   display: grid;
@@ -636,6 +637,21 @@ body {
 }
 .register-btn:active {
   transform: translateY(-1px);
+}
+
+.past-projects-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+.register-btn-secondary {
+  font-size: 12px;
+  padding: 10px 24px;
+  opacity: 0.85;
+}
+.register-btn-secondary:hover {
+  opacity: 1;
 }
 
 /* -------- Page 4 -------- */
@@ -886,7 +902,7 @@ a.logo-card:hover {
   .countdown-grid {
     gap: 8px;
   }
-  .countdown-wrap {
+  .hero-wrap {
     padding: 22px 18px;
   }
   .collage-grid {
